@@ -1,0 +1,21 @@
+@import
+  'vendors/reset';
+
+@import
+  'base/animations',
+  'base/base';
+
+@import
+  'layout/header',
+  'layout/footer';
+
+@import
+  'components/glass',
+  'components/subtitle';
+
+@import
+  'pages/about',
+  'pages/gallery',
+  'pages/galleryShop',
+  'pages/hero',
+  'pages/login';

@@ -1,0 +1,10 @@
+.footer {
+    display: grid;
+    place-content: center;
+    height: 300px;
+    background-color: #673D3D;
+
+    @media (max-width: 800px) {
+        padding: 2em;
+    }
+}
