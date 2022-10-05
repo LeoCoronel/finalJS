@@ -1,12 +1,14 @@
-const shoesContainer = document.querySelector('.shop__shoes');
+const shoesContainer = document.querySelector(".shop__shoes");
 
 const renderShoe = (shoe) => {
-    const { id, name, price, image, description } = shoe;
-    return `
+  const { id, name, price, image, description } = shoe;
+  return `
         <div class="sneakerCard glass" id="${id}">
             <div> 
-                <img src="${image ? image : "https://voax.co/img/noitem.png"}" alt="">
-                <p class="sneakerCard__price">${price}</p>
+                <img src="${
+                  image ? image : "https://voax.co/img/noitem.png"
+                }" alt="">
+                <p class="sneakerCard__price">$${price}</p>
             </div>
             <div class="sneak__desc">
                 <p class="sneakerCard__name">${name}</p>
@@ -20,16 +22,16 @@ const renderShoe = (shoe) => {
                 </button>
             </div>
         </div>
-    `
-}
+    `;
+};
 
 const renderShoes = () => {
-    shoesContainer.innerHTML += SHOES.map(renderShoe).join('');
-}
+  shoesContainer.innerHTML += SHOES.map(renderShoe).join("");
+};
 
 const render = () => {
-    // Cargar contenido en el dom
-    document.addEventListener('DOMContentLoaded', renderShoes());
-}
+  // Cargar contenido en el dom
+  document.addEventListener("DOMContentLoaded", renderShoes());
+};
 
 render();

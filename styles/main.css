@@ -510,4 +510,18 @@ main .hero__card__desc__buy button:hover {
   margin-top: 10px;
   width: 290px;
   height: 380px;
+  text-align: center;
+}
+.shop__shoes .sneakerCard button {
+  width: 100px;
+  height: 35px;
+  background: none;
+  border: 2px solid #6F6F6F;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.shop__shoes .sneakerCard button:hover {
+  background-color: #6F6F6F;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
