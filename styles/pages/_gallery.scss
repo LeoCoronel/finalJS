@@ -1,4 +1,10 @@
 .gallery {
+    @media(max-width: 1080) {
+        &__one, &__two {
+            display: flex;
+            flex-direction: column;
+        }
+    }
     &__one {
         .image {
             background-image: url('../../assets/img/bg-1.jpg');

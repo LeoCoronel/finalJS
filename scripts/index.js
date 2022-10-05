@@ -10,7 +10,14 @@ const renderShoe = (shoe) => {
             </div>
             <div class="sneak__desc">
                 <p class="sneakerCard__name">${name}</p>
-                <button>Comprar</button>
+                <button
+                    data-id="${id}"
+                    data-name="${name}"
+                    data-price="${price}"
+                    data-img="${image}"
+                    class="btn__add">
+                        Comprar
+                </button>
             </div>
         </div>
     `
