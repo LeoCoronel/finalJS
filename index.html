@@ -14,13 +14,31 @@
         </div>
         <nav class="header__nav">
             <ul class="header__nav__links">
-                <li class="header__nav__links__item"><a href="#">Home</a></li>
-                <li class="header__nav__links__item"><a href="">Shop</a></li>
-                <li class="header__nav__links__item"><a href="#about">About</a></li>
+                <li class="header__nav__links__item"><a href="./index.html">Home</a></li>
+                <li class="header__nav__links__item"><a href="#">Shop</a></li>
             </ul>
         </nav>
         <div class="header__cart">
-            <img src="./assets/img/Cart.png" alt="Cart Logo">
+            <img id="cart-logo" src="./assets/img/Cart.png" alt="Cart Logo">
+            <div class="cart hidden">
+                <div class="topCart">
+                    <p>Carro de compras.</p>
+                    <button class="closeCartBtn">X</button>                    
+
+                </div>
+                <div class="product-cart-list">
+
+                </div>
+                <div class="bottomCart">
+                    <button class="cleanCartBtn">
+                        Limpiar Carro
+                    </button>
+                    <button class="buyCartBtn">
+                        Comprar
+                    </button>
+                    <p>Total: <span class="totalPrice"></span></p>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -63,12 +81,14 @@
         <div class="shop__gallery">
             <p>Want so see more shoes?</p>
             <div class="shop__gallery__btn">
-                <a href="#shop">Visit the shop!</a>
+                <a href="./shop.html"><img src="./assets/img/Arrow.png" alt=""></a>
+                <a href="./shop.html" class="visit__btn">Visit the shop!</a>
             </div>
         </div>
     </main>
 
     <script src="./scripts/data.js"></script>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/cart.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+.shop__shoes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    .sneakerCard{
+        width: calc(25% - 10px);
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 290px;
+        height: 380px;
+    }
+}

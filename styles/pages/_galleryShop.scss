@@ -1,1 +1,35 @@
-.shop__gallery {}
+.shop__gallery {
+    height: 300px;
+    background-image: linear-gradient(black, black),
+                    url('../../assets/img/bg-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-blend-mode: saturation;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    p {
+        font-size: 3em;
+        color: orangered;
+        font-weight: bold;
+    }
+
+    &__btn {
+        a {
+            img {
+                cursor: pointer;
+            }
+        }
+        .visit__btn {
+            margin-top: 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            color: white;
+        }
+    }
+}

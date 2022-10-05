@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/img/Sneakers.png" alt="Sneakers Logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav__links">
+                <li class="header__nav__links__item"><a href="./index.html">Home</a></li>
+                <li class="header__nav__links__item"><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+        <div class="header__cart">
+            <img id="cart-logo" src="./assets/img/Cart.png" alt="Cart Logo">
+            <div class="cart hidden">
+                <div class="topCart">
+                    <p>Carro de compras.</p>
+                    <button class="closeCartBtn">X</button>                    
+
+                </div>
+                <div class="product-cart-list">
+
+                </div>
+                <div class="bottomCart">
+                    <button class="cleanCartBtn">
+                        Limpiar Carro
+                    </button>
+                    <button class="buyCartBtn">
+                        Comprar
+                    </button>
+                    <p>Total: <span class="totalPrice"></span></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="shop">
+        <div class="shop__shoes"></div>
+    </main>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/cart.js"></script>
+</body>
+</html>
