@@ -126,8 +126,25 @@
                 }
             }
         }
+
+        .bottomCart {
+            p {
+                text-align: center;
+            }
+        }
     }
 
-.disabled {
-    
-}
+    .buyCartBtn {
+        width: 100px;
+        height: 35px;
+        background: none;
+        border: 2px solid #6F6F6F;
+        margin-left: 20px;
+        cursor: pointer;
+        transition: .2s ease-in;
+
+        &:hover {
+            background-color: #6F6F6F;
+            color: #fff;
+        }
+    }

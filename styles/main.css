@@ -227,6 +227,23 @@ body {
   width: 60px;
   height: 60px;
 }
+.cart .bottomCart p {
+  text-align: center;
+}
+
+.buyCartBtn {
+  width: 100px;
+  height: 35px;
+  background: none;
+  border: 2px solid #6F6F6F;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.buyCartBtn:hover {
+  background-color: #6F6F6F;
+  color: #fff;
+}
 
 .footer {
   display: grid;
